@@ -51,12 +51,6 @@ def show_config():
     """Print information about the version of ``emconstants`` and libraries it 
     uses.
 
-    Parameters
-    ----------
-
-    Returns
-    -------
-
     """
     print(version.version_summary)
 
