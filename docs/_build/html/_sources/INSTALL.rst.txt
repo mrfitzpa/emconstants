@@ -16,20 +16,41 @@ command::
 
   pip install .
 
-which will install ``emconstants``.
+Note that you must include the period as well. The above command executes a
+standard installation of ``emconstants``. 
+
+Optionally, for additional features in ``emconstants``, one can install
+additional dependencies upon installing ``emconstants``. To install a subset of
+additional dependencies, run the following command from the root of the
+repository::
+
+  pip install .[<selector>]
+
+where ``<selector>`` can be one of the following:
+
+* ``doc``: to install the dependencies necessary for documentation generation;
+* ``all``: to install all additional dependencies, which is simply all the
+  dependencies necessary for documentation generation.
 
 Update emconstants
 ------------------
 
 If you, or someone else has made changes to this library, you can reinstall it
-by issuing the following command::
+by issuing the following command from the root of the repository::
   
     pip install .
+
+or the command::
+
+  pip install .[<selector>]
+
+where ``<selector>`` was described in the previous section.
 
 Uninstall emconstants
 ---------------------
 
-To uninstall ``emconstants``, all you need to type is::
+To uninstall ``emconstants``, run the following command from the root of the
+repository::
 
   pip uninstall emconstants
 
@@ -40,7 +61,14 @@ To generate documentation in html format from source files, you will also need
 to install several other packages. This can be done by running the following
 command from the root of the repository::
 
-  pip install -r requirements-doc.txt
+  pip install .[doc]
+
+or the command::
+
+  pip install .[all]
+
+Note that the latter command will install all extra dependencies of
+``emconstants``.
 
 Next, assuming that you are in the root of the repository, that you have
 installed all the prerequisite packages, and that ``emconstants`` has been

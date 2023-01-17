@@ -19,7 +19,7 @@ import emconstants.version
 ############################
 
 __author__       = "Matthew Fitzpatrick"
-__copyright__    = "Copyright 2022"
+__copyright__    = "Copyright 2023"
 __credits__      = ["Matthew Fitzpatrick"]
 __version__      = emconstants.version.version
 __full_version__ = emconstants.version.full_version
