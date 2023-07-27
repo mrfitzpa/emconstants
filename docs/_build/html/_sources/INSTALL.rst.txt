@@ -38,7 +38,7 @@ Update emconstants
 If you, or someone else has made changes to this library, you can reinstall it
 by issuing the following command from the root of the repository::
   
-    pip install .
+  pip install .
 
 or the command::
 
