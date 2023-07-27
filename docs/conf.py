@@ -33,9 +33,9 @@ except:
 
 # -- Project information -----------------------------------------------------
 
-project = 'emconstants'
-copyright = '2023, Matthew Fitzpatrick'
-author = 'Matthew Fitzpatrick'
+project = "emconstants"
+copyright = "2023, Matthew Fitzpatrick"
+author = "Matthew Fitzpatrick"
 
 
 
@@ -48,23 +48,23 @@ author = 'Matthew Fitzpatrick'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.extlinks',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'sphinx.ext.coverage',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.viewcode',
-    'sphinx_autodoc_typehints',
-    'sphinx.ext.githubpages',
-    'numpydoc',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.extlinks",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
+    "sphinx.ext.coverage",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.viewcode",
+    "sphinx_autodoc_typehints",
+    "sphinx.ext.githubpages",
+    "numpydoc",
 ]
 
 
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 
 
@@ -94,8 +94,8 @@ numfig_secnum_depth = 6
 
 # cross links to other sphinx documentations
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
-    'numpy': ('https://docs.scipy.org/doc/numpy', None)}
+    "python": ("https://docs.python.org/3", None),
+    "numpy": ("https://docs.scipy.org/doc/numpy", None)}
 
 
 
@@ -106,7 +106,7 @@ extlinks = {}
 
 # -- Options for HTML output -------------------------------------------------
 
-# Choose the 'read-the-docs' theme if available.
+# Choose the "read-the-docs" theme if available.
 on_rtd = os.environ.get("READTHEDOCS", None) == "True"
 if not on_rtd:
     import sphinx_rtd_theme
@@ -119,10 +119,10 @@ html_css_files = ["readthedocs_custom.css"] # Override some CSS settings.
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 
 
-# If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
+# If not "", a "Last updated on:" timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%b %d, %Y'
+html_last_updated_fmt = "%b %d, %Y"
